@@ -1,4 +1,5 @@
-document.querySelector('#push').onclick = function(){
+document.querySelector('#push').addEventListener('click',function(e){
+    e.preventDefault();
     if(document.querySelector('#newtask input').value.length == 0){
         window.alert("Kindly Enter Task Name!!!!");
     }
@@ -27,4 +28,4 @@ document.querySelector('#push').onclick = function(){
             }
         }
     }
-}
+})
